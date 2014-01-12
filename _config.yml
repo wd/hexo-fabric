@@ -1,0 +1,22 @@
+subscribe_rss: atom.xml
+google_analytics_tracking_id:
+simple_search: true
+
+excerpt_link:
+disqus_show_comment_count:
+addthis_profile_id:
+
+twitter_tweet_button:
+facebook_like:
+google_plus_one:
+google_plus_one_size: midum
+
+# social
+github_user: wd
+googleplus_user:
+facebook_user:
+twitter_user:
+linkedin_user:
+skype_user:
+youtube_user:
+lastfm_user:

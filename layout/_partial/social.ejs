@@ -1,0 +1,50 @@
+<ul id="social-links" style="text-align:center; clear:both;">
+  <% if (theme.github_user){ %>
+  <!-- GitHub -->
+  <li>
+  <a href="https://github.com/<%= theme.github_user %>" class="github" title="Github"></a>
+  </li>
+  <% } %>
+  <% if (theme.googleplus_user){ %>
+  <!-- Google Plus -->
+  <li>
+  <a href="http://plus.google.com/<%= theme.googleplus_user %>?rel=author" class="google" title="Google+"></a>
+  </li>
+  <% } %>
+  <% if (theme.facebook_user){ %>
+  <!-- Facebook -->
+  <li>
+  <a href="http://www.facebook.com/<%= theme.facebook_user %>" class="facebook" title="Facebook"></a>
+  </li>
+  <% } %>
+  <% if (theme.twitter_user){ %>
+  <!-- Twitter -->
+  <li>
+  <a href="http://www.twitter.com/<%= theme.twitter_user %>" class="twitter" title="Twitter"></a>
+  </li>
+  <% } %>
+  <% if (theme.linkedin_user){ %>
+  <!-- LinkedIn -->
+  <li>
+  <a href="http://www.linkedin.com/in/<%= theme.linkedin_user %>" class="linkedin" title="LinkedIn"></a>
+  </li>
+  <% } %>
+  <% if (theme.skype_user){ %>
+  <!-- Skype -->
+  <li>
+  <a href="http://myskype.info/<%= theme.skype_user %>" class="skype" title="Skype"></a>
+  </li>
+  <% } %>
+  <% if (theme.youtube_user){ %>
+  <!-- Youtube -->
+  <li>
+  <a href="http://youtube.com/user/<%= theme.youtube_user %>" class="youtube" title="Youtube"></a>
+  </li>
+  <% } %>
+  <% if (theme.lastfm_user){ %>
+  <!-- LastFM -->
+  <li>
+  <a href="http://www.lastfm.com/user/<%= theme.lastfm_user %>" class="lastfm" title="LastFM"></a>
+  </li>
+  <% } %>
+</ul>

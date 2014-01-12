@@ -1,0 +1,13 @@
+<% var root_url = config.url %>
+<% page.posts.each(function(post){ %>
+  <article class="post"><%- partial('_partial/article', {post: post, index: true }) %></article>
+<% }) %>
+<% if (page.total > 1) { %>
+  <nav id="pagenavi">
+    <%- paginator({
+      prev_text: '&laquo; Prev',
+      next_text: 'Next &raquo;'
+    }) %>
+  <div class="center"><a href="<%= root_url %>/blog/archives">Blog Archives</a></div>
+  </nav>
+<% } %>

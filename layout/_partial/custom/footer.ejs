@@ -1,0 +1,9 @@
+<div style="display:inline">
+    Copyright &copy; <%= date(new Date(), 'YYYY') %>
+<% if (config.author) { %>
+    <%= config.author %>
+<% } else { %>
+    <%= config.title %>
+<% } %>. Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> |
+    Theme fork from <a href="http://github.com/panks/fabric">fabric</a> by <a href="http://panks.me">Pankaj Kumar</a>
+</div>

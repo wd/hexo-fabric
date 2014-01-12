@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[<%= page.title %> | <%= theme.title %>]]></title>
+  <link href="<%= theme.url %>/<%= page.feed_url %>" rel="self"/>
+  <link href="<%= theme.url %>/"/>
+  <updated><%= theme.time | date_to_xmlschema %></updated>
+  <id><%= theme.url %>/</id>
+  <author>
+    <name><![CDATA[<%= theme.author | strip_html %>]]></name>
+    <% if theme.email %><email><![CDATA[<%= theme.email %>]]></email><% } %>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  <% for post in theme.categories[page.category] limit: 5 %>
+  <entry>
+    <title type="html"><![CDATA[<%= post.title | cdata_escape %>]]></title>
+    <link href="<%= theme.url %><%= post.url %>"/>
+    <updated><%= post.date | date_to_xmlschema %></updated>
+    <id><%= theme.url %><%= post.id %></id>
+    <content type="html"><![CDATA[<%= post.content | expand_urls: theme.url | markdownify | cdata_escape %>]]></content>
+  </entry>
+  <% endfor %>
+</feed>

@@ -1,0 +1,32 @@
+<% var root_url = config.url %>
+<% if (index) { %>
+	<h2 class="title">
+		<a href="<%= post.permalink %>"><%= post.title %></a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: <%- partial('_partial/post/date', { date_format: 'MMM D, YYYY' }) %></div>
+      <div class="tags">Tags: <%- partial('_partial/post/tags') %></div>
+    </div>
+      <% if (post.excerpt){ %>
+        <%- post.excerpt %>
+        <% if (theme.excerpt_link){ %>
+          <p class="more-link">
+            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
+          </p>
+        <% } %>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+	</div>
+<% } else { %>
+	<h2 class="title"><%= post.title %></h2>
+	<div class="entry-content"><%= post.content %></div>
+<% } %>
+<div class="meta">
+	<% if (config.disqus_shortname && theme.disqus_show_comment_count == true ) { %>
+		<span class="comments"><a href="<%= post.permalink %>index.html#disqus_thread">Comments</a></span>
+	<% } %>
+</div>
+
+<%- partial('_partial/after_footer', { post: post, index: index }) %>

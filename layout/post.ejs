@@ -1,0 +1,10 @@
+<article class="post"><%- partial('_partial/article', { post: page, index: false } ) %></article>
+<% if(page.sharing != false) { %>
+	<%- partial('_partial/post/sharing') %>
+<% } %>
+<% if (config.disqus_shortname && page.comments == true) { %>
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><%- partial('_partial/post/disqus_thread') %></div>
+</section>
+<% } %>

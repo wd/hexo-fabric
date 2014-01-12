@@ -1,0 +1,5 @@
+<% root_url = config.url %>
+<script src="<%= root_url %>/javascripts/fabric.js"></script>
+<%- partial('_partial/fancybox') %> <!-- Delete or comment this line to disable Fancybox -->
+<%- partial('_partial/disqus', { post: post, index: index }) %>
+<%- partial('_partial/custom/after_footer') %>
