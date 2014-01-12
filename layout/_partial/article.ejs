@@ -21,7 +21,7 @@
 	</div>
 <% } else { %>
 	<h2 class="title"><%= post.title %></h2>
-	<div class="entry-content"><%= post.content %></div>
+	<div class="entry-content"><%- post.content %></div>
 <% } %>
 <div class="meta">
 	<% if (config.disqus_shortname && theme.disqus_show_comment_count == true ) { %>

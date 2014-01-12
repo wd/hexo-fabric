@@ -3,7 +3,7 @@ google_analytics_tracking_id:
 simple_search: true
 
 excerpt_link:
-disqus_show_comment_count:
+disqus_show_comment_count: true
 addthis_profile_id:
 
 twitter_tweet_button:
