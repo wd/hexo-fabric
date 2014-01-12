@@ -4,3 +4,92 @@
   font-size: 1.5em;
   margin-right: 100px;
 }
+
+/* for code */
+article code, article pre {
+  background: #dddddd;
+  border: 1px solid #cccccc;
+  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace; }
+article code {
+  font-size: 0.9em;
+  padding: 1px 3px;
+  margin: 0 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+article pre {
+  font-size: 1 / 0.9em;
+  line-height: 1.5;
+  margin-top: 10px;
+  padding: 5px 15px;
+  overflow-x: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  article pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
+
+figure.highlight {
+  background: #dddddd;
+  border: 1px solid #cccccc;
+  margin-top: 10px;
+  padding: 5px 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  figure.highlight figcaption {
+    font-size: 0.9em;
+    position: relative; }
+    figure.highlight figcaption span {
+      margin: -5px -15px 0;
+      padding: 5px 15px;
+      display: block; }
+      figure.highlight figcaption span:empty {
+        display: none; }
+    figure.highlight figcaption a {
+      position: absolute;
+      top: 5px;
+      right: 0; }
+  figure.highlight code, figure.highlight pre {
+    font-size: 0.9em;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
+  figure.highlight {
+    overflow-x: auto; }
+  figure.highlight .gutter {
+    border-right: 1px solid #cccccc;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+    padding-right: 15px;
+    text-align: right; }
+  figure.highlight table {
+    border: none;
+    text-align: left;
+    margin-top: 0; }
+    figure.highlight table td {
+      text-align: left; }
+  figure.highlight td.highlight {
+    width: 100%;
+    padding-left: 15px;
+    overflow-x: auto; }
+

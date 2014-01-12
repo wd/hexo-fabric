@@ -1,0 +1,125 @@
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block; padding: 0.5em;
+  color: #333;
+  background: #f8f8f8
+}
+
+.code .comment,
+.code .template_comment,
+.diff .code .header,
+.code .javadoc {
+  color: #998;
+  font-style: italic
+}
+
+.code .keyword,
+.css .rule .code .keyword,
+.code .winutils,
+.javascript .code .title,
+.nginx .code .title,
+.code .subst,
+.code .request,
+.code .status {
+  color: #333;
+  font-weight: bold
+}
+
+.code .number,
+.code .hexcolor,
+.ruby .code .constant {
+  color: #099;
+}
+
+.code .string,
+.code .tag .code .value,
+.code .phpdoc,
+.tex .code .formula {
+  color: #d14
+}
+
+.code .title,
+.code .id,
+.coffeescript .code .params,
+.scss .code .preprocessor {
+  color: #900;
+  font-weight: bold
+}
+
+.javascript .code .title,
+.lisp .code .title,
+.clojure .code .title,
+.code .subst {
+  font-weight: normal
+}
+
+.code .class .code .title,
+.haskell .code .type,
+.vhdl .code .literal,
+.tex .code .command {
+  color: #458;
+  font-weight: bold
+}
+
+.code .tag,
+.code .tag .code .title,
+.code .rules .code .property,
+.django .code .tag .code .keyword {
+  color: #000080;
+  font-weight: normal
+}
+
+.code .attribute,
+.code .variable,
+.lisp .code .body {
+  color: #008080
+}
+
+.code .regexp {
+  color: #009926
+}
+
+.code .symbol,
+.ruby .code .symbol .code .string,
+.lisp .code .keyword,
+.tex .code .special,
+.code .prompt {
+  color: #990073
+}
+
+.code .built_in,
+.lisp .code .title,
+.clojure .code .built_in {
+  color: #0086b3
+}
+
+.code .preprocessor,
+.code .pragma,
+.code .pi,
+.code .doctype,
+.code .shebang,
+.code .cdata {
+  color: #999;
+  font-weight: bold
+}
+
+.code .deletion {
+  background: #fdd
+}
+
+.code .addition {
+  background: #dfd
+}
+
+.diff .code .change {
+  background: #0086b3
+}
+
+.code .chunk {
+  color: #aaa
+}
