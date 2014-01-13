@@ -13,6 +13,8 @@ $ git clone https://github.com/wd/hexo-fabric themes/hexo-fabric
 $ hexo generate
 ```
 
+There some settings in `theme/hexo-fabric/_config.yml` you may want to set.
+
 ### highlight theme
 Only test on hexo 2.4.4, and highlight.js 0.8, maybe not work in other version.
 
@@ -29,6 +31,8 @@ Then regenerate your site.
 ### TODO
 - do not support pagination for archive, tags
 - do not support category
+- titlecase, line_number, date_format settings support
+- rss, robots, sitemap not work
 
 Recommand you set like following in your `_config.yml`.
 ```
