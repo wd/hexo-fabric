@@ -1,0 +1,26 @@
+<%
+  var last;
+  page.posts.each(function(post, i){
+     var year = post.date.year();
+     var this_date = date(post.date, 'MMM D');
+     if (last != year){
+       if (last != null){ %>
+        </section>
+      <% } %>
+      <% last = year; %>
+	  <section class="archives"><h1 class="year"><%= year %></h1>
+    <% } %>
+    <article>
+      <h2 class="title"><a href="<%= post.permalink %>"><%= post.title %></a></h2>
+    	<div class="meta">
+    		<span class="date"><%= this_date %></span>
+    		<span class="tags"><%- partial('_partial/post/tags', { post: post} ) %></span>
+    	    <% if (config.disqus_shortname && post.comments != false && theme.disqus_show_comment_count == true ) { %>
+    	    <span class="comments"><a href="<%= post.permalink %>#disqus_thread">Comments</a></span>
+    	    <% } %>
+    	</div>
+    </article>
+  <% }) %>
+  <% if (page.posts.length){ %>
+    </section>
+  <% } %>

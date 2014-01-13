@@ -2,7 +2,7 @@ subscribe_rss: atom.xml
 google_analytics_tracking_id:
 simple_search: true
 
-excerpt_link:
+excerpt_link: Read More
 disqus_show_comment_count: true
 addthis_profile_id:
 
