@@ -1,28 +1,42 @@
 hexo-fabric
 ===========
 
-fabric theme for hexo
+hexo-fabric is a theme for [hexo](https://github.com/tommy351/hexo), fork from [fabric](http://github.com/panks/fabric) by [Pankaj Kumar](http://panks.me) for octopress.
 
-### Set highlight theme
+You can visit [my blog](http://wdicc.com) to preview.
 
-hexo >= 2.4.4, hack lib/util/highlight.js
+### how to install
+
+Like all other theme, execute the following command, and set `theme` in `_config.yml` to `hexo-fabric`。
 ```
-hljs.configure({
-  classPrefix: 'hljs-'
-});
-```
-
-Then visit https://github.com/isagalaev/highlight.js/tree/master/src/styles to download a thtme into `source/stylesheets/hljs.css`
-
-You can do like following to select your fav theme.
-```
-$ git clone https://github.com/isagalaev/highlight.js
-$ cd highlight.js
-$ python ./tools/build.py
-$ open src/test.html
+$ git clone https://github.com/wd/hexo-fabric themes/hexo-fabric
+$ hexo generate
 ```
 
-gem install sass
-gem install compass
+### highlight theme
+Only test on hexo 2.4.4, and highlight.js 0.8, maybe not work in other version.
 
+Visit https://github.com/isagalaev/highlight.js/tree/master/src/styles to download a thtme into `source/stylesheets/hljs.css`. You can visit http://highlightjs.org/static/test.html  to select your fav theme.
+
+Use vim open hljs.css you download, and then:
+```
 :%s/.hljs-/.code ./g
+:wq
+```
+
+Then regenerate your site.
+
+### TODO
+- do not support pagination for archive, tags
+- do not support category
+
+Recommand you set like following in your `_config.yml`.
+```
+# Archives
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 1
+category: 0
+tag: 1
+```
