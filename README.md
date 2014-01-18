@@ -32,7 +32,7 @@ Then regenerate your site.
 - do not support pagination for archive, tags
 - do not support category
 - titlecase, line_number, date_format settings support
-- rss, robots, sitemap not work
+- robots, sitemap not work
 
 Recommand you set like following in your `_config.yml`.
 ```
