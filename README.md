@@ -44,3 +44,11 @@ archive: 1
 category: 0
 tag: 1
 ```
+
+Since hexo 3.x changed it's architechure and config file, to disable pagination for archive, you should put following settings in your `_config.yml`.
+```
+archive_generator:
+  per_page: 1000  # a big number
+  yearly: true
+  monthly: true
+```
