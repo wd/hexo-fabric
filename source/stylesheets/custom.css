@@ -35,6 +35,8 @@ article pre {
     border: none;
     padding: 0;
     margin: 0;
+    word-wrap: break-word;
+    word-break: normal;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;

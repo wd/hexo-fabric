@@ -2,7 +2,7 @@
 <% if(page.sharing != false) { %>
 	<%- partial('_partial/post/sharing') %>
 <% } %>
-<% if (config.disqus_shortname && page.comments != false) { %>
+<% if (theme.disqus_shortname && page.comments != false) { %>
 <%- partial('_partial/disqus', { post: page, index: false }) %>
 <section id="comment">
     <h2 class="title">Comments</h2>

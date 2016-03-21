@@ -3,7 +3,7 @@ hexo-fabric
 
 hexo-fabric is a theme for [hexo](https://github.com/tommy351/hexo), fork from [fabric](http://github.com/panks/fabric) by [Pankaj Kumar](http://panks.me) for octopress.
 
-You can visit [my blog](http://wdicc.com) to preview.
+You can visit [my blog](https://wdicc.com) to preview.
 
 ### how to install
 

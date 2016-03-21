@@ -1,7 +1,7 @@
 <% var arr = []; %>
 <% if (post.tags && post.tags.length){
     post.tags.forEach(function(item){
-        arr.push('<a href="' + config.root + item.path + '">' + item.name + '</a>');
+        arr.push('<a href="' + '../' + item.path + '">' + item.name + '</a>');
     });
 }
 %>
