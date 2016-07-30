@@ -3,16 +3,16 @@ google_analytics_tracking_id:
 simple_search: true
 
 excerpt_link: Read More
-disqus_show_comment_count: true
+disqus_shortname:
 addthis_profile_id:
 
-twitter_tweet_button:
+twitter_tweet_button: true
 facebook_like:
 google_plus_one:
 google_plus_one_size: midum
 
 # social
-github_user: wd
+github_user:
 googleplus_user:
 facebook_user:
 twitter_user:
