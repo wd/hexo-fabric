@@ -11,10 +11,10 @@
   padding: 0; }
 
 body {
-  font-family: 'Amethysta', serif;
+  font-family: 'PingFang SC', serif;
   font-weight: 300;
-  font-size: 18px;
-  background: url("/images/retina_dust.png");
+  font-size: 16px;
+  /*background: url("/images/retina_dust.png");*/
   color: #444;
   colori: #666666; }
   @media screen and (max-width: 1040px) {
@@ -469,7 +469,7 @@ article {
     line-height: 35px;
     margin-bottom: 20px; }
     article h2.title a {
-      color: #666666; }
+      color: #1094e8; }
   article .title a {
     color: #7c7873;
     -webkit-transition: all 1s ease-in-out;

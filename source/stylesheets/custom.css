@@ -7,9 +7,9 @@
 
 /* for code */
 article code, article pre {
-  background: #dddddd;
-  border: 1px solid #cccccc;
-  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace; }
+  background: oldlace;
+  border: 1px solid oldlace;
+  font-family: "Hermit", Monaco, "Andale Mono", "lucida console", "Courier New", monospace; }
 article code {
   font-size: 0.9em;
   padding: 1px 3px;
