@@ -16,7 +16,7 @@
     		<span class="date"><%= this_date %></span>
     		<span class="tags"><%- partial('_partial/post/tags', { post: post} ) %></span>
     	    <% if (theme.disqus_shortname && post.comments != false ) { %>
-    	    <span class="comments"><a href="../<%= post.path %>#disqus_thread">Comments</a></span>
+    	    <span class="comments"><a href="<%= post.permalink %>#disqus_thread">Comments</a></span>
     	    <% } %>
     	</div>
     </article>
