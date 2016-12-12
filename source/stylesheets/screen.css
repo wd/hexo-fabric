@@ -599,7 +599,6 @@ article {
     margin-left: 0; } }
 .post .meta {
   line-height: 2;
-  font-size: 0.7em;
   color: #999999;
   width: 370px; }
   @media screen and (max-width: 800px) {
@@ -648,6 +647,14 @@ article {
     bottom: 0;
     width: 200px;
     border-top: 1px solid #dddddd; }
+  .archives .top-border-padding {
+    border-top: 1px solid #fff; }
+    .archives .top-border-padding:before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      width: 100%;
+      border-top: 1px solid #dddddd; }
   .archives .year {
     line-height: 35px;
     width: 200px;
