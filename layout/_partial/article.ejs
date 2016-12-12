@@ -20,6 +20,10 @@
 	</div>
 <% } else { %>
 	<h2 class="title"><%= post.title %></h2>
+    <div class="meta">
+        <div class="date">Published on: <%- partial('_partial/post/date', { date_format: 'MMM D, YYYY' }) %></div>
+        <div class="tags">Tags: <%- partial('_partial/post/tags') %></div>
+    </div>
 	<div class="entry-content"><%- post.content %></div>
 <% } %>
 <div class="meta">
