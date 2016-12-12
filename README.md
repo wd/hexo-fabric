@@ -28,11 +28,16 @@ Use vim open hljs.css you download, and then:
 
 Then regenerate your site.
 
+### tags cloud page
+
+If you want to support tags cloud page, you should create a empty page use command `hexo  new page 'tags'`. And then change the title for this page to 'All Tags' or what you want, it will display at tags cloud page.
+
+If you don't want this page, you can delete it from `themes/hexo-fabric/layout/_partial/custom/navigation.ejs`.
+
 ### TODO
-- do not support pagination for archive, tags
 - do not support category
 - titlecase, line_number, date_format settings support
-- robots, sitemap not work
+- robots, sitemap may not work
 
 Recommand you set like following in your `_config.yml`.
 ```
@@ -43,12 +48,4 @@ Recommand you set like following in your `_config.yml`.
 archive: 1
 category: 0
 tag: 1
-```
-
-Since hexo 3.x changed it's architechure and config file, to disable pagination for archive, you should put following settings in your `_config.yml`.
-```
-archive_generator:
-  per_page: 1000  # a big number
-  yearly: true
-  monthly: true
 ```
