@@ -94,4 +94,5 @@ figure.highlight {
     width: 100%;
     padding-left: 15px;
     overflow-x: auto; }
-
+  figure.highlight .line {
+    height: 18px;}
