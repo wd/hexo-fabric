@@ -7,8 +7,9 @@
     <% if (theme.simple_search) { %>
     <li>
     <div id="dark">
-        <form method="get" action="/search.html" id="search">
-            <input name="query" type="text" placeholder="Search..." x-webkit-speech />
+        <form action="//www.google.com.hk/search" method="get" accept-charset="UTF-8" id="search">
+            <input type="hidden" name="sitesearch" value="<%= config.url %>" />
+            <input type="text" name="q" results="0" placeholder="Search..." x-webkit-speech />
         </form>
     </div>
     </li>
